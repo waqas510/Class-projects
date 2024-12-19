@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-MADAM BOUTIQUE</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+<body>
+    <section class="Container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light text-black announcmentbar"><marquee class="marq1" onmouseover="this.stop()" onmouseout="this.start()">WELCOME TO MADAM BOUTIQUE</marquee></nav>
+        <nav class="navbar">
+
+            <div class="logo "><a href="index.html" class="logoname"><img src="Images/logo2.png" alt="logo" height="230px" width="300px"></a></div>
+        <input type="checkbox" name="" id="checkRes">
+            
+            <input type="checkbox" name="" id="checkRes">
+
+            <ul class="navlinks nav-menu ">
+                <li><a href="index.html" class="nav-item active">Home</a></li>
+                <li><a href="about.html" class="nav-item ">About US</a></li>
+                <li><a href="products.html" class="nav-item ">Products</a></li>
+                <li><a href="Gallery.html" class="nav-item ">Gallery</a></li>
+                <li><a href="contact.html" class="nav-item ">Contact US</a></li>
+            </ul>
+        
+        <div class="login"><button class="btn btn-danger text-white loginbtn" type="button" onclick="loginBtnOpen()" ><div class="icon"></div>Login</button></div>
+        
+        <label for="checkRes" id="checkBtn" class="fa fa-bars"></label>
+    </nav>
+        
+                                    <!--content end-->
+
+        <div class="content"> 
+            <div class="login1">
+                <!-- Login form start  -->
+                <div class="form-container">
+                    <div class="form login-form">
+                        <form action="thankyou.html">
+                            <h2>Get Started</h2>
+                            <div class="input-box">
+                                <input type="email" placeholder="Enter Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                                title="Please enter a valid email address."> 
+                                <i ><img src="Images/emil-icon.svg" alt=""></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Enter Your Password" required  minlength="8" 
+                                title="Password must be at least 8 characters long."> 
+                                <i ><img src="Images/password-icon.svg" alt=""></i>
+                            </div>
+                            <div class="option-field">
+                                <span class="checkbox">
+                                    <input type="checkbox" id="check">
+                                    <label for="check">Remember me</label>
+                                </span>
+                                <a href="#" class="forgot-password" style="margin-left: 155px;">Forgot Password?</a>
+                            </div>
+                            <button class="btn btn-outline-danger button">Login</button>
+                            <div class="login-signup">
+                                Don't have an account?
+                                <a href="signup.html" >Signup</a>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+            <div class="login2">
+                <div class="left-form-content">
+                        <img src="Images/login-side-image.jpg" alt="contact">
+                </div>
+            </div>
+                
+    </div>
+
+                                     <!--content end-->
+                                     <!--Footer Start-->
+        <footer>
+            
+            <center><div>Copyright © 2024 MADAM BOUTIQUE</div></center>
+            
+        </footer>
+                                <!--Footer end-->
+
+    </section>
+    
+</body>
+</html>
+<script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script> 
+
+                            // login form script start
+
+            function loginBtnOpen(){
+            window.location.href = "login.html";
+            }
+                            // Login form script end
+        </script>
