@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belva Printed Co-Ord Set</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link rel="stylesheet" href="../CSS/product.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    
+</head>
+<body>
+    <section class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light text-black announcmentbar"><marquee class="marq1" onmouseover="this.stop()" onmouseout="this.start()">WELCOME TO MADAM BOUTIQUE</marquee></nav>
+        <nav class="navbar">
+
+            <div class="logo "><a href="index.html" class="logoname"><img src="../Images/logo2.png" alt="logo" height="230px" width="300px"></a></div>
+        <input type="checkbox" name="" id="checkRes">
+            <ul class="navlinks nav-menu ">
+                <li><a href="../index.html" class="nav-item active">Home</a></li>
+                <li><a href="../about.html" class="nav-item ">About US</a></li>
+                <li><a href="../products.html" class="nav-item ">Products</a></li>
+                <li><a href="../contact.html" class="nav-item ">Gallery</a></li>
+                <li><a href="../contact.html" class="nav-item ">Contact US</a></li>
+            </ul>
+        
+        <div class="login"><button class="btn btn-danger text-white loginbtn" onclick="loginBtnOpen()"><div class="icon"></div>Login</button></div></nav>
+        <label for="checkRes" id="checkBtn" class="fa fa-bars"></label>
+                                    <!--Product page start-->
+<div class="content">
+        <section class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../Images/Collection-1/Product2/1.webp" class="img-fluid" alt="suit image"  id="productImg">
+                        <img src="../Images/Collection-1/Product2/1.webp" alt="suit image" width="25%" class="rounded mx-auto d-block imgdetails" onclick="changeImage(this)">
+                        <img src="../Images/Collection-1/Product2/2.webp" alt="suit image" width="25%" class="rounded mx-auto d-block imgdetails" onclick="changeImage(this)">
+                        <img src="../Images/Collection-1/Product2/3.webp" alt="suit image" width="25%" class="rounded mx-auto d-block imgdetails" onclick="changeImage(this)">
+                        <img src="../Images/Collection-1/Product2/4.webp" alt="suit image" width="25%" class="rounded mx-auto d-block imgdetails" onclick="changeImage(this)">
+
+
+                    </div>
+
+                    <div class="col-md-8 img-details">
+                        <p>Details</p>
+                    <h1>Belva Printed Co-Ord Set</h1>
+                    <h4>Rs.4,990.00</h4>
+                    <select>
+                        <option>Select Size</option>
+                        <option>SMALL</option>
+                        <option>MEDIUM</option>
+                        <option>LARGE</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="#" class="btn">Add To  Cart</a><br><br><br><br><br>
+                    <h3>Product  Details <i class="fa fa-indent"></i></h3>
+                    <p>Product Description
+                        Fabric: Wrinkle free Crepe 
+
+                        Model is 5'7'' and wearing Size Small 
+
+                        CARE INSTRUCTIONS: MACHINE WASHING MAX 30C. DO NOT BLEACH IRONNING MAX 110C. DRY CLEANING PERCHLOROETHYLENE. DO NOT TUMBLE DRY.
+
+                        Disclaimer: The color of the product may vary from the colors being displayed on your device.</p>
+                    </div>
+                </div>
+        </section>
+    </div>
+                                    <!--product page end-->
+                                    <!--Footer Start-->
+        <footer>
+            <div class="footer1">
+                <div class="footerlogo">
+                    <a href="index.html" class="footerlogoname">MADAM BOUTIQUE
+                        <img class="footerlogoimg" src="../Images/logo2.png" alt=""></a>
+                </div>
+                <div>
+                    <img src="#" alt="">
+                </div>
+            </div>
+            <div class="footer2">
+                <ul>
+                <li class="footer-link"><a href="../index.html">Home</a></li>
+                <li class="footer-link"><a href="../products.html">Products</a></li>
+                <li class="footer-link"><a href="../contact.html">Contact US</a></li>
+                <li class="footer-link"><a href="../about.html">About US</a></li>
+            </ul>
+            <div>Copyright © 2024 MADAM BOUTIQUE</div>
+            </div>
+            <div class="footer3">
+                <ul>
+                    <li class="footer-link"><a href="#">Privacy Policy</a></li>
+                    <li class="footer-link"><a href="#">Return Policy</a></li>
+                    <li class="footer-link"><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+                                <!--Footer Start-->
+
+    </section>
+    
+</body>
+</html>
+<script src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script> 
+            
+         // login form script start
+
+         function loginBtnOpen(){
+            window.location.href = "../login.html";
+            }
+                            // Login form script end
+                            
+                    // product page image change
+    function changeImage(thumbnail) {
+        var newSrc = thumbnail.src;
+        document.getElementById('productImg').src = newSrc;
+    }
+
+        </script>
